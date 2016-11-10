@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	overflow: hidden;
+	margin: 0 auto;	
+}
+
+#myBackground {
+    background-color:#fff;
+    height:718px;
+	position:relative;
+    width:1024px;
+}
+
+.images {
+    position: absolute;
+}
+
+.drop_area{
+	left: 318px;
+    position: absolute;
+    top: 371px;
+}
+
+/* LOCAL NAVIGATION BUTTONS */
+#prevButEx, #nextButEx {
+	position:absolute;
+	cursor:pointer;
+}
+#prevButEx {
+    bottom: -45px;
+    left: 5px;
+}
+#nextButEx {
+    bottom: -45px;
+    left: 80px;
+}
+
+/*
+span.drop, span.dropC {
+    border: medium dotted #FFFF00;
+    display: inline-block;
+    height: 165px;
+    padding: 18px;
+    width: 365px;
+}*/
+
+
+div.drags {
+	left: 897px;
+    position: absolute;
+    top: 324px;
+}
+
+div.drags > span {
+    display: block;
+}
+
+
+ ul.unfilled > li {
+	cursor: pointer;
+    display: block;
+    margin-bottom: 0px;
+ }
+ 
+ ul.unfilled {
+    left: -620px;
+    position: relative;
+    top: -338px;
+ }
+ 
+.invisible{
+	opacity: 0;
+}
+
+.larges {
+	left: 42px;
+    list-style: outside none none;
+    position: absolute;
+    top: 205px;
+}
+ 
+#large1{
+	left: 271px;
+    position: absolute;
+    top: 137px;
+}

@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.wrapper {
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.message {
+    position: absolute;
+    left: 250px;
+    top: 120px;
+}
+
+/* DnD Elements */
+.drags {
+	left: 897px;
+    position: absolute;
+    top: 324px;
+}
+.drags > ul {
+	left: -820px;
+	position: relative;
+	top: -230px;
+}
+
+.drags > ul > li {
+	cursor: pointer;
+	display: block;
+	margin-bottom: 50px;
+}
+.drags li {
+	position: absolute;
+}
+.drags > span {
+    display: block;
+}
+
+#dragLI1 {
+    bottom: -395px;
+}
+#dragLI2 {
+    bottom: -395px;
+}
+#dragLI3 {
+   bottom: -555px;
+}
+
+/* DROPS*/
+#drop1{
+	left: 540px;
+	position: absolute;
+	top: 270px;
+}
+
+#drop2{
+	left: 540px;
+	position: absolute;
+	top: 410px;
+}
+
+#drop3{
+	left: 540px;
+	position: absolute;
+	top: 550px;
+}
+
+.theAnswers {
+	left: 42px;
+    list-style: outside none none;
+    position: absolute;
+    top: 205px;
+}
+ 
+#answer1 {
+    left: 498px;
+    position: absolute;
+    top: 49px;
+}
+#answer2{
+	left: 498px;
+	position: absolute;
+	top: 190px;
+}
+#answer3{
+	left: 498px;
+	position: absolute;
+	top: 330px;
+}
+
+/*
+
+*/
+
+#dragBack1, #dragBack2{
+   position: absolute;
+}
+#dragBack1 {
+    bottom: 313px;
+    left: 117px;
+}
+
+#dragBack2 {
+    bottom: 153px;
+    left: 117px;
+}
+
+#arrow1 {
+    left: 360px;
+    position: absolute;
+    top: 350px;
+}
+#arrow2 {
+    left: 360px;
+    position: absolute;
+    top: 400px;
+}
+#arrow3 {
+    left: 260px;
+    position: absolute;
+    top: 520px;
+}

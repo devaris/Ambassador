@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercise 2_1</title>
+
+		<!-- GLOBAL CSS -->
+        <link rel="stylesheet" href="../../fonts/webfonts.css">
+		<link rel="stylesheet" href="../../css/globalExercise.css" type="text/css" media="screen, projection"/>
+		<link rel="stylesheet" href="../../css/animate.css">
+		
+		<!-- LOCAL CSS -->       
+		<link rel="stylesheet" href="actis.css" type="text/css" media="screen, projection" />
+		
+		<!-- GLOBAL JS -->
+		<script src='../../js/jquery-1.11.0.min.js'></script>
+		<script src="../../js/jquery.cookie.js"></script>
+		<script src="../../js/common.js"></script>		
+		<script src="../../js/animation.js"></script>
+		<script src="../../js/audiocw.js"></script>
+		<script type="text/javascript">
+			audioRedirection = '../../';
+		</script>
+		
+		<!-- LOCAL JS -->
+		<script src="thisact.js"></script>
+		
+	</head>
+	<body style="margin:0">
+	
+		<div class="wrapper">
+			
+			<div class="message animated fadeInLeftBig">
+				<img src="images/message.png" width="358" height="101"/>
+			</div>
+			<div class="crossDiv animated fadeIn">
+				<img id="img0" class="ingredients" src="images/pic1.png" width="207" height="29"/>
+				<img id="img1" class="consumer" src="images/pic2.png" width="380" height="35"/>
+				<img id="img2" class="water" src="images/pic3.png" width="127" height="29"/>
+				<img id="img3" class="packages" src="images/pic4.png" width="176" height="32"/>
+				<img id="img4" class="carbonation" src="images/pic5.png" width="237" height="33"/>
+				<img id="img5" class="taste" src="images/pic6.png" width="113" height="31"/>
+				
+				
+				<div id="input0">
+					<input id="inp0" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp1" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp2" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp3" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp4" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+				</div>
+				
+				<div id="input1">
+					<input id="inp5" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp6" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp7" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp8" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp9" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp10" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp11" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp12" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp13" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp14" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp15" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+				</div>
+				
+				<div id="input2">
+					<input id="inp16" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp17" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp18" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+				</div>
+				
+				<div id="input3">
+					<input id="inp19" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp20" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp21" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+				</div>
+				
+				<div id="input4">
+					<input id="inp22" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp23" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp24" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp25" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+				</div>
+				
+				<div id="input5">
+					<input id="inp26" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp27" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp28" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+					<input id="inp29" type="text"  maxlength="1" accept="text/plain" class="crosswrd"/>
+				</div>
+
+				<span class="crossText"></span>
+				<!--Ingredients-->
+				<input id="hinp0" type="hidden"  value="G"  class="crosswrdh"/>
+				<input id="hinp1" type="hidden"  value="D"  class="crosswrdh"/>
+				<input id="hinp2" type="hidden"  value="E"  class="crosswrdh"/>
+				<input id="hinp3" type="hidden"  value="N"  class="crosswrdh"/>
+				<input id="hinp4" type="hidden"  value="T"  class="crosswrdh"/>
+				
+				<!--Consumer Complaints-->
+				<input id="hinp5" type="hidden"  value="O"  class="crosswrdh"/>
+				<input id="hinp6" type="hidden"  value="N"  class="crosswrdh"/>
+				<input id="hinp7" type="hidden"  value="S"  class="crosswrdh"/>
+				<input id="hinp8" type="hidden"  value="U"  class="crosswrdh"/>
+				<input id="hinp9" type="hidden"  value="E"  class="crosswrdh"/>
+				<input id="hinp10" type="hidden"  value="O"  class="crosswrdh"/>
+				<input id="hinp11" type="hidden"  value="M"  class="crosswrdh"/>
+				<input id="hinp12" type="hidden"  value="A"  class="crosswrdh"/>
+				<input id="hinp13" type="hidden"  value="I"  class="crosswrdh"/>
+				<input id="hinp14" type="hidden"  value="N"  class="crosswrdh"/>
+				<input id="hinp15" type="hidden"  value="T"  class="crosswrdh"/>
+				
+				<!--Water-->
+				<input id="hinp16" type="hidden"  value="A"  class="crosswrdh"/>
+				<input id="hinp17" type="hidden"  value="T"  class="crosswrdh"/>
+				<input id="hinp18" type="hidden"  value="E"  class="crosswrdh"/>
+				
+				<!--Packages-->
+				<input id="hinp19" type="hidden"  value="A"  class="crosswrdh"/>
+				<input id="hinp20" type="hidden"  value="C"  class="crosswrdh"/>
+				<input id="hinp21" type="hidden"  value="K"  class="crosswrdh"/>
+				
+				<!--Carbonation-->
+				<input id="hinp22" type="hidden"  value="A"  class="crosswrdh"/>
+				<input id="hinp23" type="hidden"  value="R"  class="crosswrdh"/>
+				<input id="hinp24" type="hidden"  value="O"  class="crosswrdh"/>
+				<input id="hinp25" type="hidden"  value="N"  class="crosswrdh"/>
+				
+				<!--Taste-->
+				<input id="hinp26" type="hidden"  value="A"  class="crosswrdh"/>
+				<input id="hinp27" type="hidden"  value="S"  class="crosswrdh"/>
+				<input id="hinp28" type="hidden"  value="T"  class="crosswrdh"/>
+				<input id="hinp29" type="hidden"  value="E"  class="crosswrdh"/>
+				
+				
+			</div>
+				
+			<div class="correctAnswers">
+				<img id="answer0" class="ingredientsRed" src="images/ingredients.png" width="195" height="35"/>
+				<img id="answer1" class="consumerRed" src="images/consumers.png" width="372" height="35"/>
+				<img id="answer2" class="waterRed" src="images/water.png" width="113" height="25"/>
+				<img id="answer3" class="packagesRed" src="images/packages.png" width="167" height="35"/>
+				<img id="answer4" class="carbonationRed" src="images/carbonation.png" width="216" height="27"/>
+				<img id="answer5" class="tasteRed" src="images/taste.png" width="94" height="25"/>
+			</div>
+			
+		</div>
+	<!--<script src="../../js/retina-1.1.0.min.js"></script>-->
+	</body>
+</html>

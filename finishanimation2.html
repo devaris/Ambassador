@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<TITLE>Ambassador Menu</TITLE>
+    
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/globalExercise.css" type="text/css" media="screen, projection"/>
+    
+    <!-- LOCAL CSS -->
+    <style>
+		div.wrapper {
+			background-image: url("images/mainMenu.jpg");
+			background-repeat: no-repeat;
+			background-position: center center;
+		}		
+		/* GIF Animation */
+		.appFinishedAnimation1{
+			position: absolute;
+			top: 0;
+		}
+		
+	</style>
+    
+	<!-- GLOBAL JS -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+
+	<!-- LOCAL JS -->	
+
+     <script>			
+		$(document).ready(function(){	
+			
+			
+			var myTimeOutInit = setTimeout(function(){ 
+				try {
+					window.parent.loadPage(-4,0);
+				} catch(err) {
+	
+				}
+				clearTimeout(myTimeOutInit);
+			}, 15800);
+			
+		});
+	</script>
+    
+    </head>
+    
+    <body style="margin:0">
+    
+        <div class="wrapper">
+
+        	<div class="appFinishedAnimation1">
+				<img src="images/finished/animation2.gif" width="1028" height="768"/>
+            </div>            
+        </div>
+    
+    </body>
+
+</html>

@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.wrapper {
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* LOCAL NAVIGATION BUTTONS */
+#prevButEx, #nextButEx {
+	position:absolute;
+	cursor:pointer;
+}
+#prevButEx {
+    bottom: 5px;
+    left: 5px;
+}
+#nextButEx {
+    bottom: 5px;
+    left: 80px;
+}
+
+
+.firstBut{
+	cursor:pointer;
+	left: 200px;
+    position: absolute;
+    top: 200px;
+}
+
+.secondBut{
+	cursor:pointer;
+	left: 580px;
+    position: absolute;
+    top: 200px;
+}
+
+.thirdBut{
+	cursor:pointer;
+	left: 380px;
+    position: absolute;
+    top: 470px;
+}

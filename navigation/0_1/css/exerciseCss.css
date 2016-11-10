@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.wrapper {
+    background-image: url("../images/back.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+	
+	-moz-animation-delay:0s;
+  	-webkit-animation-delay:0s;
+	animation-delay:0s;
+	
+	animation-duration: 3s;
+}
+
+.introText img{
+	position: relative;
+}
+
+#introText0{
+	-moz-animation-delay:1s;
+  	-webkit-animation-delay:1s;
+	animation-delay:1s;
+	
+	animation-duration: 3s;
+	
+	left: 110px;
+    top: 250px;
+}
+#introText1{
+	-moz-animation-delay:3s;
+  	-webkit-animation-delay:3s;
+	animation-delay:3s;
+	
+	animation-duration: 3s;
+	
+	left: 160px;
+    top: 365px;
+}
+#introHeart{
+	-moz-animation-delay:5s;
+  	-webkit-animation-delay:5s;
+	animation-delay:5s;
+	
+	animation-duration: 3s;
+	
+	right: 455px;
+    top: 375px;
+	
+	cursor:pointer;
+}
+
+/* GIF Animation */
+.introAnimation{
+    position: absolute;
+	top: 0;
+	
+	visibility:hidden;
+}

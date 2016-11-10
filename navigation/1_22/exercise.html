@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <TITLE>Ambassador Video</TITLE>
+    
+    <!-- GLOBAL CSS -->
+	<link rel="stylesheet" href="../../css/globalExercise.css" type="text/css" media="screen, projection"/>
+    
+    <!-- LOCAL CSS -->
+     <link rel="stylesheet" href="css/exerciseCss.css" type="text/css" media="screen, projection"/>
+    
+	<!-- GLOBAL JS -->
+    <script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+
+    <!-- LOCAL JS -->
+    
+    <script>
+		// COMPLETED MAIN ACTIVITY 
+		window.parent.activateFor();
+	</script>
+    
+	<script>
+		$(document).ready(function(){
+
+			// PAUSE MAIN AUDIO
+			window.parent.mainAudioPause();
+			
+			// PLAY THIS VIDEO
+			var myVideo = document.getElementsByTagName("video")[0];
+			myVideo.play();
+			
+			// On end video proceed to next page
+			//$("video").bind("ended", window.parent.loadPage(1,9));
+			
+			
+		}); //Document Ready End	
+			
+	</script>
+
+</head>
+
+<body style="margin:0">
+
+    <div class="wrapper">
+    	
+                      
+	</div>
+
+    
+    <!-- <video preload="yes" autoplay="true" width="1024" height="768"> -->
+    <video preload="yes" autoplay="true" width="800" height="450">
+        <source src="http://crystalclearserver.com/ftp/cchellenic/AMBASSADOR/app/video/sedentary.mp4" type="video/mp4">
+    </video>
+
+
+</body>
+</html>

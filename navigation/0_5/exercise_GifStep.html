@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<TITLE>Ambassador Intro</TITLE>
+    
+    <!-- GLOBAL CSS -->
+	<link rel="stylesheet" href="../../css/globalExercise.css" type="text/css" media="screen, projection"/>
+    
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="css/exerciseCss.css" type="text/css" media="screen, projection"/>
+    
+	<!-- GLOBAL JS -->
+    <script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+
+    <!-- LOCAL JS -->	
+  	<script type='text/javascript' src='js/jquery.jsmovie.1.4.4.js'></script>
+    
+    <script>
+		// COMPLETED MAIN ACTIVITY 
+		window.parent.activateFor();
+	</script>
+     
+    <script>			
+		$(document).ready(function(){
+								   
+			// ***** MENU ANIMATION ***** 
+			$('#animMovie').jsMovie({
+				sequence: 'menu#.jpg',
+				from: 1,
+				to: 121,
+				folder : "images/animated/",
+				height:768,
+				width:1024,
+				repeat:false,
+				playOnLoad:false,
+				showPreLoader:true,
+				loader: {path:"images/animated/loading.gif",height:800,width:800,rows:1,columns:1},        
+			});		
+			
+			/*
+			$('#animMovie').jsMovie('play');
+			$("#animMovie").jsMovie("play",1,121,false,false);
+			*/
+			
+			// Local NEXT Function
+			function newMainNextAssign(){
+				//window.parent.consoleMsg(">> newMainNextAssign");
+				
+				// HIDE GLOBAL PREVIOUS Button
+				try {
+					window.parent.previousHide();
+				} catch(err) {
+	
+				}				
+				// HIDE LOCAL NEXT Button
+				$("#nextButEx").css('visibility','hidden');
+				
+				
+				// SHOW + PLAY Animation Menu Animation GIF
+				$(".introAnimation").css('visibility','visible');
+				$("#animMovie").jsMovie("play",1,121,false,false);
+				
+				// Assign End of GIF animation
+				$('#animMovie').on('ended',function(){ 
+					//window.parent.consoleMsg("GIF ENDED");
+					
+					var myTimeOut1 = setTimeout(function(){ 
+						// *** LOAD HOME MENU ****
+						window.parent.loadPage(-1,0);
+						clearTimeout(myTimeOut1);
+					}, 1500);
+					
+					var myTimeOut2 = setTimeout(function(){ 
+						$("#animMovie").jsMovie("destroy");	
+						clearTimeout(myTimeOut2);
+					}, 1600);
+					
+				});
+			}			
+			$("#nextButEx").on("click", newMainNextAssign);
+
+		}); //Document Ready End	
+		
+	</script>
+    
+    </head>
+    
+    <body style="margin:0">
+    
+        <div class="wrapper">
+        
+        	<div class="introAnimation">
+				<div id='animMovie'></div>
+            </div> 
+            
+            <div id="nextButEx"><img src="../../images/next.png"></div>
+            
+        </div>
+    
+    </body>
+
+</html>

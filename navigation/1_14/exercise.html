@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<TITLE>Ambassador Intro</TITLE>
+    
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../../css/animate.css"> 
+	<link rel="stylesheet" href="../../css/globalExercise.css" type="text/css" media="screen, projection"/>
+    
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="css/exerciseCss.css" type="text/css" media="screen, projection"/>
+    
+	<!-- GLOBAL JS -->
+    <script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+
+    <!-- LOCAL JS -->
+    <script>
+		// COMPLETED MAIN ACTIVITY 
+		window.parent.activateFor();
+	</script>
+    
+	<script>
+    $(document).ready(function(){
+                               
+        // Local PREVIOUS Function
+        function brandPageAssign(){
+            //window.parent.consoleMsg("!!!!! newMainPreviousAssign !!!!!!!!!");
+            
+            window.parent.loadPage(1,12);
+            
+            // Remove Previous' New Assign
+            $(".brandPage").unbind("click", brandPageAssign);
+        }			
+        $(".brandPage").on("click", brandPageAssign);
+        
+        
+    }); //Document Ready End	
+        
+    </script>
+  
+    </head>
+    
+    <body style="margin:0">
+    
+        <div class="wrapper">
+               
+			<div>
+				<span class="dialogue1 animated fadeInUp"><img src="images/dialogue1.png" width="332" height="172"/></span>
+				<span class="dialogue2 animated fadeInUp"><img src="images/dialogue2.png"  width="273" height="170"/></span>
+				<span class="dialogue3 animated fadeInUp"><img src="images/dialogue3.png"  width="285" height="165"/></span>
+				<span class="dialogue4 animated fadeInUp"><img src="images/dialogue4.png" width="284" height="239"/></span>
+			</div>
+		
+			<div class="brandPage pulse">
+				<img class="" src="images/button.png" width="153" height="124" />
+			</div>
+			   
+        </div>
+    
+    </body>
+
+</html>

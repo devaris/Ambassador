@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<TITLE>Ambassador Intro</TITLE>
+    
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../../css/animate.css"> 
+	<link rel="stylesheet" href="../../css/globalExercise.css" type="text/css" media="screen, projection"/>
+    
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="css/exerciseCss.css" type="text/css" media="screen, projection"/>
+    
+	<!-- GLOBAL JS -->
+    <script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+
+    <!-- LOCAL JS -->
+    <script>
+		// COMPLETED MAIN ACTIVITY 
+		window.parent.activateFor();
+	</script>
+    
+	<script>
+    $(document).ready(function(){
+                               
+        // Local PREVIOUS Function
+        function brandPageAssign(){
+            //window.parent.consoleMsg("!!!!! newMainPreviousAssign !!!!!!!!!");
+            
+            window.parent.loadPage(1,12);
+            
+            // Remove Previous' New Assign
+            $(".brandPage").unbind("click", brandPageAssign);
+        }			
+        $(".brandPage").on("click", brandPageAssign);
+        
+        
+    }); //Document Ready End	
+        
+    </script>
+  
+    </head>
+    
+    <body style="margin:0">
+    
+        <div class="wrapper">
+        
+        	<div class="fly1">
+				<img src="images/ballon1.png" width="69" height="165" />
+			</div>
+			
+			<div class="fly2">
+				<img src="images/ballon2.png" width="69" height="165" />
+			</div>
+			
+			<div class="fly3">
+				<img src="images/ballon3.png" width="69" height="165" />
+			</div>
+               
+			<div>
+				<span class="dialogue1 animated fadeInUp"><img src="images/dialogue1.png" width="295" height="194" /></span>
+				<span class="dialogue2 animated fadeInUp"><img src="images/dialogue2.png"  width="295" height="276"/></span>
+				<span class="dialogue3 animated fadeInUp"><img src="images/dialogue3.png"  width="295" height="195"/></span>
+				<span class="dialogue4 animated fadeInUp"><img src="images/dialogue4.png" width="261" height="118"/></span>
+			</div>
+		
+			<div class="brandPage pulse">
+				<img src="images/button.png" width="140" height="114" />
+			</div>
+			
+			
+			   
+        </div>
+    
+    </body>
+
+</html>

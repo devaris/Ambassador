@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.wrapper {
+    background-image: url("../images/back.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+	
+	/*
+	-moz-animation-delay:0s;
+  	-webkit-animation-delay:0s;
+	animation-delay:0s;
+	
+	animation-duration: 3s;
+	*/
+}
+
+video {
+    left: 110px;
+    position: absolute;
+    top: 200px;
+}

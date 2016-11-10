@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <TITLE>Ambassador Video</TITLE>
+    
+    <!-- GLOBAL CSS -->
+	<link rel="stylesheet" href="../../css/globalExercise.css" type="text/css" media="screen, projection"/>
+    
+    <!-- LOCAL CSS -->
+     <link rel="stylesheet" href="css/exerciseCss.css" type="text/css" media="screen, projection"/>
+    
+	<!-- GLOBAL JS -->
+    <script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+
+    <!-- LOCAL JS -->
+    
+    <script>
+		// COMPLETED MAIN ACTIVITY 
+		window.parent.activateFor();
+	</script>
+    
+	<script>
+		$(document).ready(function(){
+			
+			// LOCAL NAVIGATION BUTTONS
+			
+			// Local NEXT Function
+			function newMainNextAssign(){			
+				
+				window.parent.loadPage(1,9);
+				
+				// Remove Next' New Assign
+				$("#nextButEx").unbind("click", newMainNextAssign);
+			}			
+			$("#nextButEx").on("click", newMainNextAssign);
+			
+			// Local PREVIOUS Function
+			function newMainPreviousAssign(){
+				//window.parent.consoleMsg("!!!!! newMainPreviousAssign !!!!!!!!!");
+				
+				window.parent.loadPage(1,1);
+				
+				// Remove Previous' New Assign
+				$("#prevButEx").unbind("click", newMainPreviousAssign);
+			}			
+			$("#prevButEx").on("click", newMainPreviousAssign);	
+			
+			
+			
+			// PAUSE MAIN AUDIO
+			window.parent.mainAudioPause();
+			
+			// PLAY THIS VIDEO
+			var myVideo = document.getElementsByTagName("video")[0];
+			myVideo.play();
+			
+			// On end video proceed to next page
+			//$("video").bind("ended", window.parent.loadPage(1,9));
+			
+			
+		}); //Document Ready End	
+			
+	</script>
+
+</head>
+
+<body style="margin:0">
+
+    <div class="wrapper">
+    	<div class="container">
+            <img src="images/imgAll.jpg">
+        </div>
+                      
+	</div>
+    
+	<div id="prevButEx"><img src="../../images/previous.png"></div>
+	<!-- <div id="nextButEx"><img src="../../images/next.png"></div> -->
+    
+    <!-- <video preload="yes" autoplay="true" width="1024" height="768"> -->
+    <video preload="yes" autoplay="true" width="600" height="450">
+        <source src="http://crystalclearserver.com/ftp/cchellenic/AMBASSADOR/app/video/milestone.mp4" type="video/mp4">
+    </video>
+
+
+</body>
+</html>

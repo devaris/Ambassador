@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<title>Exercise 5</title>
+		
+		<!--GLOBAL CSS-->
+		<link rel="stylesheet" href="../../css/animate.css">
+		<link rel="stylesheet" href="../../css/globalExercise.css" type="text/css" media="screen, projection"/>
+		
+		<!--Local CSS-->
+		<link rel="stylesheet" href="actis.css" type="text/css" media="screen, projection" />
+		
+		<!--GLOBAL JS-->
+		<script src='../../js/jquery-1.11.0.min.js'></script>
+		<script src="../../js/jquery-ui.js"></script>
+		<script src="../../js/jquery.cookie.js"></script>
+		<script src="../../js/animation.js"></script>
+		<script src="../../js/audiocw.js"></script>
+		
+		<!--LOCAL CSS-->
+		<script src="thisact.js"></script>
+    </head>
+	
+    <body style="margin:0">
+	
+		<div class="wrapper">
+			<!--<img src="images/background.png" width="1024" height="768" style="visibility: hidden;">-->
+		
+			<div>
+				<span class="drop_area">
+					<img src="images/grey_area.png" class="drop" id="drop1"  width="454" height="116"/>
+					<img src="images/grey_area.png" class="drop" id="drop2"  width="454" height="116"/>
+					<img src="images/grey_area.png" class="drop" id="drop3"  width="454" height="116"/>
+					<img src="images/grey_area.png" class="drop" id="drop4"  width="454" height="116"/>
+				</span>
+
+		
+				<ul class="larges">
+					<li id="large1"><img src="images/answer1.png" width="457" height="100" class="qlarge animated fadeIn"/></li>
+					<li id="large2"><img src="images/answer2.png" width="459" height="100" class="qlarge animated fadeIn"/></li>
+					<li id="large3"><img src="images/answer3.png" width="455" height="100" class="qlarge animated fadeIn"/></li>
+					<li id="large4"><img src="images/answer4.png" width="449" height="101" class="qlarge animated fadeIn"/></li>
+				</ul>
+
+				<div class="drags">
+					<ul class="filled invisible">
+						<li class="drag1s"><img src="images/choice1.png" width="179" height="86"/></li>
+						<li class="drag2s"><img src="images/choice2.png" width="179" height="82"/></li>
+						<li class="drag3s"><img src="images/choice3.png" width="110" height="88"/>
+						<li class="drag4s"><img src="images/choice4.png" width="178" height="94"/></li>
+					</ul>
+					<ul class="unfilled">
+						<li class="drag1s animated fadeIn"><span id="drag1"><img src="images/choice1.png" width="179" height="86"/></span></li>
+						<li class="drag2s animated fadeIn"><span id="drag2"><img src="images/choice2.png" width="179" height="82"/></span></li>
+						<li class="drag3s animated fadeIn"><span id="drag3"><img src="images/choice3.png" width="110" height="88"/></span></li>
+						<li class="drag4s animated fadeIn"><span id="drag4"><img src="images/choice4.png" width="178" height="94"/></span></li>
+					</ul>
+				</div>
+			
+				<div class="tick">
+					<img id="correct1" src="images/true.png" width="102" height="151"/>
+					<img id="correct2" src="images/true.png" width="102" height="151"/>
+					<img id="correct3" src="images/true.png" width="102" height="151"/>
+					<img id="correct4" src="images/true.png" width="102" height="151"/>
+				</div>
+				<div class="cross">
+					<img id="wrong1" src="images/false.png" width="207" height="164"/>
+					<img id="wrong2" src="images/false.png" width="207" height="164"/>
+					<img id="wrong3" src="images/false.png" width="207" height="164"/>
+					<img id="wrong4" src="images/false.png" width="207" height="164"/>
+				</div>
+		</div>
+			
+		</div> <!--END wrapper-->
+    <!--<script src="../../js/retina-1.1.0.min.js"></script>-->
+    </body>
+</html>

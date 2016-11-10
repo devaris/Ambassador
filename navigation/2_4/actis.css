@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	overflow: hidden;
+}
+
+div.wrapper {
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+#drop1{
+	left: 60px;
+    position: absolute;
+    top: 230px;
+}
+
+#drop2{
+	left: 60px;
+    position: absolute;
+    top: 310px;
+}
+
+#drop3{
+	left: 60px;
+    position: absolute;
+    top: 400px;
+}
+
+#drop4{
+	left: 60px;
+    position: absolute;
+    top: 490px;
+}
+
+#drop5{
+	left: 60px;
+    position: absolute;
+    top: 580px;
+}
+
+div.drags {
+	left: 697px;
+    position: absolute;
+    top: 324px;
+}
+
+div.drags > span {
+    display: block;
+}
+
+
+ ul.unfilled > li {
+	cursor: pointer;
+    display: block;
+    margin-bottom: 30px;
+ }
+ 
+ ul.unfilled {
+    left: 65px;
+    position: absolute;
+    top: -60px;
+ }
+ 
+.invisible{
+	opacity: 0;
+}
+
+.larges {
+	left: 42px;
+    list-style: outside none none;
+    position: absolute;
+    top: 205px;
+}
+ 
+#large1{
+	left: 18px;
+    position: absolute;
+    top: 9px;
+}
+
+#large2{
+	left: 18px;
+    position: absolute;
+    top: 88px;
+}
+
+#large3{
+	left: 18px;
+    position: absolute;
+    top: 179px;
+}
+
+#large4{
+	left: 18px;
+    position: absolute;
+    top: 269px;
+}
+
+#large5{
+	left: 17px;
+    position: absolute;
+    top: 359px;
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<title>Exercise 5</title>
+		
+		<!--GLOBAL CSS-->
+		<link rel="stylesheet" href="../../css/animate.css">
+		<link rel="stylesheet" href="../../css/globalExercise.css" type="text/css" media="screen, projection"/>
+		
+		<!--Local CSS-->
+		<link rel="stylesheet" href="actis.css" type="text/css" media="screen, projection" />
+		
+		<!--GLOBAL JS-->
+		<script src='../../js/jquery-1.11.0.min.js'></script>
+		<script src="../../js/jquery-ui.js"></script>
+		<script src="../../js/jquery.cookie.js"></script>
+		<script src="../../js/animation.js"></script>
+		<script src="../../js/audiocw.js"></script>
+		
+		<!--LOCAL CSS-->
+		<script src="thisact.js"></script>
+    </head>
+	
+    <body style="margin:0">
+	
+		<div class="wrapper">
+			
+			<div class="message">
+				<img src="images/message.png" width="769" height="109"/>
+			</div>
+            
+		
+			<div class="drops">
+            	<!-- The Drop Images -->
+				<span class="drop_area">
+					<img id="drop1" class="drop" src="images/box1.png" width="408" height="93"/>
+					<img id="drop2" class="drop" src="images/box2.png" width="408" height="93"/>
+					<img id="drop3" class="drop" src="images/box3.png" width="408" height="93"/>
+				</span>
+
+				<!-- The Answers -->
+				<ul class="theAnswers">
+					<li id="answer1"><img src="images/answer1.png" width="408" height="93"/></li>
+					<li id="answer2"><img src="images/answer2.png" width="408" height="93"/></li>
+					<li id="answer3"><img src="images/answer3.png" width="408" height="93"/></li>
+				</ul>
+			</div>
+            
+            <!-- EXTRA -->
+            <div>
+            	<div id="dragBack1"><img src="images/rank1.png" width="238" height="107"/></div>
+            	<div id="dragBack2"><img src="images/rank2.png" width="121" height="99"/></div>
+                
+                <div class="theArrows">
+                    <div id="arrow1"><img src="images/arrow1.png" width="152" height="71"/></div>
+                    <div id="arrow2"><img src="images/arrow2.png" width="152" height="71"/></div>
+                    <div id="arrow3"><img src="images/arrow3.png" width="248" height="117"/></div>
+				</div>
+                
+            </div>
+            
+            <div class="drags">
+                <!-- The actual Drag Objects 
+                <ul class="filled invisible">
+                    <li class="drag1s"><img src="images/rank1.png" width="238" height="107"/></li>
+                    <li class="drag2s"><img src="images/rank1.png" width="238" height="107"/></li>
+                    <li class="drag3s"><img src="images/rank2.png" width="121" height="99"/></li>
+                </ul>
+                -->
+                <!-- Initial Drag Graphics -->
+                <ul>
+                    <li id="dragLI1" class="drag"><span id="drag1"><img src="images/rank1.png" width="238" height="107"/></span></li>
+                    <li id="dragLI2" class="drag"><span id="drag2"><img src="images/rank1.png" width="238" height="107"/></span></li>                    
+					<li id="dragLI3" class="drag"><span id="drag3"><img src="images/rank2.png" width="121" height="99"/></span></li>
+                    
+              </ul>
+            </div>
+            
+            
+			
+		</div> <!--END wrapper-->
+        
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<title>Unit 1 Exercise 3</title>
+	
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../../css/globalExercise.css" type="text/css" media="screen, projection"/>
+    <link rel="stylesheet" href="../../css/animate.css">
+    
+    <!-- LOCAL CSS -->       
+    <link rel="stylesheet" href="actis.css" type="text/css" media="screen, projection" />
+    
+     <!-- GLOBAL JS -->
+    <script src='../../js/jquery-1.11.0.min.js'></script>
+    <script src="../../js/jquery.cookie.js"></script> 
+    <script src="../../js/animation.js"></script>
+	<script src="../../js/audiocw.js"></script>
+     
+    <!-- DnD -->    
+    <script src="../../js/jquery-ui.js"></script>
+    
+    <!-- LOCAL JS -->
+    <script src="thisact.js"></script>
+    
+    </head>
+    <body>
+	<div id="myBackground">
+	
+        <div class="activity">
+            <span class="drop_area">
+                <img src="red_square.png" class="drop animated fadeIn" id="drop1"  width="90" height="25"/>
+            </span>
+            <span class="images">
+                <img src="image_bg.png" class="animated fadeIn" width="1024" height="768"/>
+            </span>
+            
+            <ul class="larges">
+                <li id="large1"><img src="answer.png" width="104" height="26" class="qlarge animated fadeIn"/></li>
+            </ul>
+    
+            <div class="drags">
+                <ul class="filled invisible">
+                    <li class="drag1s"><img src="choice1.png" width="110" height="38"/></li>
+                    <li class="drag2s"><img src="choice2.png" width="110" height="38"/></li>
+                    <li class="drag3s"><img src="choice3.png" width="110" height="38"/></li>
+                </ul>
+                <ul class="unfilled">
+                    <li class="drag1s animated fadeIn"><span id="drag1"><img src="choice1.png" width="110" height="38"/></span></li>
+                    <li class="drag2s animated fadeIn"><span id="drag2"><img src="choice2.png" width="110" height="38"/></span></li>
+                    <li class="drag3s animated fadeIn"><span id="drag3"><img src="choice3.png" width="110" height="38"/></span></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="prevButEx"><img src="../../images/previous.png"></div>
+        <div id="nextButEx"><img src="../../images/next.png"></div>
+        
+    </div>
+    
+    <script>
+		
+		// LOCAL NAVIGATION BUTTONS
+		
+		// Local NEXT Function
+		function newMainNextAssign(){			
+			
+			window.parent.loadPage(1,4);
+			
+			// Remove Next' New Assign
+			$("#nextButEx").unbind("click", newMainNextAssign);
+		}			
+		$("#nextButEx").on("click", newMainNextAssign);
+		 
+		// Local PREVIOUS Function
+		function newMainPreviousAssign(){
+			
+			window.parent.loadPage(1,2);
+			
+			// Remove Previous' New Assign
+			$("#prevButEx").unbind("click", newMainPreviousAssign);
+		}			
+		$("#prevButEx").on("click", newMainPreviousAssign);	
+	
+		
+	</script>
+    
+    <!--<script src="../../js/retina-1.1.0.min.js"></script>-->
+    </body>
+</html>

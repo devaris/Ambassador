@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.wrapper {
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#prevButEx {
+	position:absolute;
+	cursor:pointer;
+}
+#prevButEx {
+    bottom: 5px;
+    left: 5px;
+}

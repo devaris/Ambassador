@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<TITLE>Ambassador Intro</TITLE>
+    
+    <!-- GLOBAL CSS -->
+    <!-- <link rel="stylesheet" href="../../css/animate.css"> -->
+	<link rel="stylesheet" href="../../css/globalExercise.css" type="text/css" media="screen, projection"/>
+    
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="css/exerciseCss.css" type="text/css" media="screen, projection"/>
+    
+	<!-- GLOBAL JS -->
+    <script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+
+    <!-- LOCAL JS -->
+    <script>
+		// COMPLETED MAIN ACTIVITY 
+		window.parent.activateFor();
+	</script>
+    
+    <script>
+		$(document).ready(function(){
+								   
+			// PLAY MAIN AUDIO
+			window.parent.mainAudioPlay();
+			
+			// LOCAL NAVIGATION BUTTONS
+			
+			// Local NEXT Function
+			function manAssign(){
+				
+				// Var for Activity 1_18 to decide MAN/WOMAN
+				$(this).css("opacity", "0.6");
+				
+				window.parent.myGender="male";
+				
+				// Load next page
+				window.parent.loadPage(1,18);
+				
+				// Remove Next' New Assign
+				$(".man").unbind("click", manAssign);
+			}			
+			$(".man").on("click", manAssign);
+			
+			// Local PREVIOUS Function
+			function womanAssign(){
+				//window.parent.consoleMsg("!!!!! newMainPreviousAssign !!!!!!!!!");
+				
+				$(this).css("opacity", "0.6");
+				
+				window.parent.myGender="female";
+				
+				// Load next page
+				window.parent.loadPage(1,18);
+				
+				// Remove Previous' New Assign
+				$(".woman").unbind("click", womanAssign);
+			}			
+			$(".woman").on("click", womanAssign);	
+			
+			
+		}); //Document Ready End	
+			
+	</script>
+  
+    </head>
+    
+    <body style="margin:0">
+    
+        <div class="wrapper">
+			
+			<div class="myImages">
+				<span class="man"><img src="images/man.png" width="247" height="578"/></span>
+				<span class="woman"><img src="images/woman.png" width="205" height="576"/></span>
+			</div>
+                          
+        </div>
+    
+    </body>
+
+</html>

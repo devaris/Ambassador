@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.wrapper {
+    background-image: url("../images/back.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.imgLogos, .imgText, .imgLogos img, .imgText img{
+	position: relative;
+}
+.imgLogos{
+	top: 110px;
+	left: 170px;
+}
+.imgText{
+	top: 580px;
+	left: 170px;
+}
+
+#introLogo0{
+	-moz-animation-delay:1s;
+  	-webkit-animation-delay:1s;
+	animation-delay:1s;
+	
+	/*animation-duration: 3s;*/
+}
+#introLogo1{
+	-moz-animation-delay:2s;
+  	-webkit-animation-delay:2s;
+	animation-delay:2s;
+}
+#introLogo2{
+	-moz-animation-delay:3s;
+  	-webkit-animation-delay:3s;
+	animation-delay:3s;
+}
+
+#introText0{
+	-moz-animation-delay:4s;
+  	-webkit-animation-delay:4s;
+	animation-delay:4s;
+}
+#introText1{
+	-moz-animation-delay:5s;
+  	-webkit-animation-delay:5s;
+	animation-delay:5s;
+	
+	top: 55px;
+	right: 168px;
+}
+#introText2{
+	-moz-animation-delay:7s;
+  	-webkit-animation-delay:7s;
+	animation-delay:7s;
+	
+	right: 100px;
+}
+#introText3{
+	-moz-animation-delay:8s;
+  	-webkit-animation-delay:8s;
+	animation-delay:8s;
+	
+	top: 55px;
+	right: 268px;
+}
+#introText4{
+	-moz-animation-delay:10s;
+  	-webkit-animation-delay:10s;
+	animation-delay:10s;
+	
+	right: 200px;
+}
+#introText5{
+	-moz-animation-delay:11s;
+  	-webkit-animation-delay:11s;
+	animation-delay:11s;
+	
+	top: -15px;
+	right: -515px;
+}

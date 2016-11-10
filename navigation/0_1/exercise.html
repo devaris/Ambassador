@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<TITLE>Ambassador Intro</TITLE>
+    
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../../css/animate.css">
+	<link rel="stylesheet" href="../../css/globalExercise.css" type="text/css" media="screen, projection"/>
+    
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="css/exerciseCss.css" type="text/css" media="screen, projection"/>
+    
+	<!-- GLOBAL JS -->
+	<script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+
+    <!-- LOCAL JS -->	
+    <script type='text/javascript' src='js/jquery.jsmovie.1.4.4.js'></script>
+    
+    <script>
+		// COMPLETED MAIN ACTIVITY 
+		window.parent.activateFor();
+	</script>
+     
+    <script>			
+		$(document).ready(function(){	
+								   
+			$('#introHeart').on("click", function(evt){
+				
+				// SHOW AND INIT GIF ANIMATION
+				$(".introText").css('visibility','hidden');
+				$("#animMovie").css('visibility','visible');
+				
+				$("#animMovie").jsMovie("play",1,75,false,false);
+				
+				$('#animMovie').on('ended',function(){ 
+					
+					var myTimeOut1 = setTimeout(function(){ 
+						window.parent.loadPage(0,2);
+						clearTimeout(myTimeOut1);
+					}, 1500);
+					
+					var myTimeOut2 = setTimeout(function(){ 
+						$("#animMovie").jsMovie("destroy");	
+						clearTimeout(myTimeOut2);
+					}, 1600);
+					
+				});
+				/*
+				$('#animMovie').bind("pause",function(){ 
+					window.parent.consoleMsg("GIF PAUSED");
+				});
+				*/
+			});
+			
+			$('#animMovie').jsMovie({
+				sequence: 'intro#.jpg',
+				from: 1,
+				to: 75,
+				folder : "images/animated/intro/",
+				height:768,
+				width:1024,
+				repeat:false,
+				playOnLoad:false,
+				showPreLoader:true,
+				loader: {path:"images/animated/loading.gif",height:800,width:800,rows:1,columns:1},        
+			});		
+			
+			/*$('#animMovie').jsMovie('play');
+			$("#animMovie").jsMovie("play",1,75,false,false);
+			*/
+			
+		});
+	</script>
+  
+    </head>
+    
+    <body style="margin:0">
+    
+        <div class="wrapper animated fadeIn">
+            
+            <div class="introText">
+                <img id="introText0" class="animated zoomInLeft" src="images/welcome.png">
+                <img id="introText1" class="animated zoomInLeft" src="images/click.png">
+                <img id="introHeart" class="animated zoomInLeft" src="images/button.png">
+            </div>
+            
+            <div class="introAnimation">
+				<div id='animMovie'></div>
+            </div> 
+              
+        </div>
+    
+    </body>
+
+</html>

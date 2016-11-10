@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.wrapper {
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.firstTitle{
+	left: 0px;
+    position: absolute;
+    top: 110px;
+	-webkit-animation-delay: 0.2s;
+	-moz-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+
+.secondTitle{
+	left: 0px;
+    position: absolute;
+    top: 200px;
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+}
+
+.image1{
+	left: 190px;
+    position: absolute;
+    top: 300px;
+	-webkit-animation-delay: 2.5s;
+	-moz-animation-delay: 2.5s;
+	animation-delay: 2.5s;
+}
+
+.image2{
+	left: 30px;
+    position: absolute;
+    top: 450px;
+	-webkit-animation-delay: 4s;
+	-moz-animation-delay: 4s;
+	animation-delay: 4s;
+}
+
+.image3{
+	left: 710px;
+    position: absolute;
+    top: 380px;
+	-webkit-animation-delay: 5.5s;
+	-moz-animation-delay: 5.5s;
+	animation-delay: 5.5s;
+}
+
+.image4{
+	left: 360px;
+    position: absolute;
+    top: 470px;
+	-webkit-animation-delay: 7s;
+	-moz-animation-delay: 7s;
+	animation-delay: 7s;
+}
+
+.image5{
+	left: 400px;
+    position: absolute;
+    top: 590px;
+	-webkit-animation-delay: 8.5s;
+	-moz-animation-delay: 8.5s;
+	animation-delay: 8.5s;
+}
+
+.image6{
+	left: 150px;
+    position: absolute;
+    top: 560px;
+	-webkit-animation-delay: 10s;
+	-moz-animation-delay: 10s;
+	animation-delay: 10s;
+}
+
+.image7{
+	left: 600px;
+    position: absolute;
+    top: 550px;
+	-webkit-animation-delay: 11.5s;
+	-moz-animation-delay: 11.5s;
+	animation-delay: 11.5s;
+}
+
+/*
+.content{
+	-webkit-animation-delay: 14s;
+	-moz-animation-delay:14s;
+	animation-delay: 14s;
+}*/

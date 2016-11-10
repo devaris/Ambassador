@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.wrapper {
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.titleMe{
+	left: 35px;
+    position: absolute;
+    top: 0;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+.activeTop{
+	left: 695px;
+    position: absolute;
+    top: 0;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay:1s;
+	animation-delay: 1s;
+}
+
+.title{
+	left: 295px;
+    position: absolute;
+    top: 20px;
+	-webkit-animation-delay: 1.3s;
+	-moz-animation-delay:1.3s;
+	animation-delay: 1.3s;
+}
+
+.smallWave{
+	left: 0;
+    position: absolute;
+    top: 225px;
+	-webkit-animation-delay: 0.6s;
+	-moz-animation-delay:0.6s;
+	animation-delay: 0.6s;
+}
+
+.bigWave{
+	bottom: -5px;
+    left: 0;
+    position: absolute;
+	-webkit-animation-delay: 0.1s;
+	-moz-animation-delay:0.1s;
+	animation-delay: 0.1s;
+}
+
+
+.firstCircle{
+	left: 10px;
+    position: absolute;
+    top: 140px;
+	-webkit-animation-delay: 1.9s;
+	-moz-animation-delay:1.9s;
+	animation-delay: 1.9s;
+}
+
+
+.secondCircle{
+	left: 260px;
+    position: absolute;
+    top: 110px;
+	-webkit-animation-delay: 2.9s;
+	-moz-animation-delay:2.9s;
+	animation-delay: 2.9s;
+}
+
+.thirdCircle{
+	left: 520px;
+    position: absolute;
+    top: 140px;
+	-webkit-animation-delay: 3.9s;
+	-moz-animation-delay:3.9s;
+	animation-delay: 3.9s;
+}
+
+.forthCircle{
+	left: 780px;
+    position: absolute;
+    top: 170px;
+	-webkit-animation-delay: 4.9s;
+	-moz-animation-delay:4.9s;
+	animation-delay: 4.9s;
+}
+
+
+.lifestyle{
+	left: 270px;
+    position: absolute;
+    top: 370px;
+	-webkit-animation-delay: 5.6s;
+	-moz-animation-delay:5.6s;
+	animation-delay: 5.6s;
+}
+
+.firstBox{
+	left: 20px;
+    position: absolute;
+    top: 460px;
+	-webkit-animation-delay: 6.6s;
+	-moz-animation-delay:6.6s;
+	animation-delay: 6.6s;
+}
+
+.secondBox{
+	left: 370px;
+    position: absolute;
+    top: 460px;
+	-webkit-animation-delay: 8.6s;
+	-moz-animation-delay:8.6s;
+	animation-delay: 8.6s;
+}
+
+.thirdBox{
+	left: 720px;
+    position: absolute;
+    top: 460px;
+	-webkit-animation-delay: 10.6s;
+	-moz-animation-delay: 10.6s;
+	animation-delay: 10.6s;
+}
+
+.firstPlus{
+	left: 325px;
+    position: absolute;
+    top: 630px;
+	-webkit-animation-delay: 7.6s;
+	-moz-animation-delay:7.6s;
+	animation-delay: 7.6s;
+}
+
+.secondPlus{
+	left: 675px;
+    position: absolute;
+    top: 630px;
+	-webkit-animation-delay: 9.6s;
+	-moz-animation-delay:9.6s;
+	animation-delay: 9.6s;
+}
+
+.content{
+	-webkit-animation-delay: 12.6s;
+	-moz-animation-delay:12.6s;
+	animation-delay: 12.6s;
+}

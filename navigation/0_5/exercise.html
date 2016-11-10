@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<TITLE>Ambassador Intro</TITLE>
+    
+    <!-- GLOBAL CSS -->
+	<link rel="stylesheet" href="../../css/globalExercise.css" type="text/css" media="screen, projection"/>
+    
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="css/exerciseCss.css" type="text/css" media="screen, projection"/>
+    
+	<!-- GLOBAL JS -->
+    <script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+
+    <!-- LOCAL JS -->	
+    
+    <script>
+		// COMPLETED MAIN ACTIVITY 
+		window.parent.activateFor();
+	</script>
+     
+    <script>			
+		$(document).ready(function(){
+
+			
+			// Local NEXT Function
+			function newMainNextAssign(){
+				//window.parent.consoleMsg(">> newMainNextAssign");
+				
+				// HIDE GLOBAL PREVIOUS Button
+				try {
+					window.parent.previousHide();
+				} catch(err) {
+	
+				}				
+				// HIDE LOCAL NEXT Button
+				$("#nextButEx").css('visibility','hidden');
+				
+				
+				// SHOW + PLAY Animation Menu Animation GIF
+				$(".introAnimation").css('visibility','visible');
+				
+				var myTimeOutInit = setTimeout(function(){ 
+					try {
+						window.parent.loadPage(-1,0);
+					} catch(err) {
+		
+					}
+					clearTimeout(myTimeOutInit);
+				}, 6900);
+				
+			}			
+			$("#nextButEx").on("click", newMainNextAssign);
+
+		}); //Document Ready End	
+		
+	</script>
+    
+    </head>
+    
+    <body style="margin:0">
+    
+        <div class="wrapper">
+        
+        	<div class="introAnimation">
+				<img src="images/animation.gif" width="1028" height="768"/>
+            </div> 
+            
+            <div id="nextButEx"><img src="../../images/next.png"></div>
+            
+        </div>
+    
+    </body>
+
+</html>

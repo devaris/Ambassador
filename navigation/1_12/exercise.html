@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<TITLE>Ambassador Intro</TITLE>
+    
+    <!-- GLOBAL CSS -->
+    <link rel="stylesheet" href="../../css/animate.css"> 
+	<link rel="stylesheet" href="../../css/globalExercise.css" type="text/css" media="screen, projection"/>
+    
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="css/exerciseCss.css" type="text/css" media="screen, projection"/>
+    
+	<!-- GLOBAL JS -->
+    <script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+
+    <!-- LOCAL JS -->
+    
+    <script>
+		// COMPLETED MAIN ACTIVITY 
+		window.parent.activateFor();
+	</script>
+    
+    <script>
+		$(document).ready(function(){
+			
+			// LOCAL NAVIGATION BUTTONS		
+			// Local NEXT Function
+			function newMainNextAssign(){			
+				
+				window.parent.loadPage(1,16);
+				
+				// Remove Next' New Assign
+				$("#nextButEx").unbind("click", newMainNextAssign);
+			}			
+			$("#nextButEx").on("click", newMainNextAssign);
+			
+			
+			// Local Menu Buttons
+			function firstButAssign(){			
+				
+				window.parent.loadPage(1,13);
+				
+				// Remove Next' New Assign
+				$(".firstBut").unbind("click", firstButAssign);
+			}			
+			$(".firstBut").on("click", firstButAssign);
+			
+			function secondButAssign(){			
+				
+				window.parent.loadPage(1,14);
+				
+				// Remove Next' New Assign
+				$(".secondBut").unbind("click", secondButAssign);
+			}			
+			$(".secondBut").on("click", secondButAssign);
+			
+			function thirdButAssign(){			
+				
+				window.parent.loadPage(1,15);
+				
+				// Remove Next' New Assign
+				$(".thirdBut").unbind("click", thirdButAssign);
+			}			
+			$(".thirdBut").on("click", thirdButAssign);
+			
+		}); //Document Ready End	
+			
+	</script>	
+  
+    </head>
+    
+    <body style="margin:0">
+    
+        <div class="wrapper">
+               
+			<div class="myButtons">
+				<span class="firstBut animated zoomInRight"><img src="images/button1.png" width="320" height="260"/></span>
+				<span class="secondBut animated zoomInRight"><img src="images/button2.png" width="318" height="258"/></span>
+				<span class="thirdBut animated zoomInRight"><img src="images/button3.png" width="344" height="278"/></span>
+			</div>
+            
+            <div id="nextButEx"><img src="../../images/next.png"></div>
+			   
+        </div>
+    
+    </body>
+
+</html>

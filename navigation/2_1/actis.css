@@ -1,0 +1,347 @@
+@charset "utf-8";
+/* CSS Document */
+div.wrapper {
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.message{
+	position: absolute;
+	top: 140px;
+	left: 0px;
+}
+
+.ingredients{
+	left: -90px;
+    position: absolute;
+    top: 60px;
+}
+
+.water{
+	left: 60px;
+    position: absolute;
+    top: 230px;
+}
+
+.taste{
+	left: -90px;
+    position: absolute;
+    top: 370px;
+}
+
+.consumer{
+	left: 300px;
+    position: absolute;
+    top: -60px;
+}
+
+.carbonation{
+	left: 360px;
+    position: absolute;
+    top: 270px;
+}
+
+.packages{
+	left: 640px;
+    position: absolute;
+    top: 140px;
+}
+
+#answer0, #answer1, #answer2, #answer3, #answer4, #answer5{
+	visibility: hidden;
+}
+
+.ingredientsRed{
+	/*visibility: hidden;*/
+	left: 43px;
+    position: absolute;
+    top: 310px;
+}
+
+
+.waterRed {
+    left: 193px;
+    position: absolute;
+    top: 477px;
+}
+
+.tasteRed{
+	left: 45px;
+    position: absolute;
+    top: 620px;
+}
+
+.consumerRed{
+	left: 435px;
+    position: absolute;
+    top: 190px;
+}
+
+.carbonationRed{
+	left: 495px;
+    position: absolute;
+    top: 517px;
+}
+
+.packagesRed{
+	left: 775px;
+    position: absolute;
+    top: 385px;
+}
+
+input.crosswrd {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    font-family: Conv_calibrib;
+    font-size: 25px;
+	height: 25px;
+	padding: 0;
+	width: 25px;
+}
+
+#inp0 {
+	left: -60px;
+	position: absolute;
+	top: 60px;
+}
+
+#inp1 {
+	left: -6px;
+    position: absolute;
+	top: 60px;
+}
+
+
+#inp2 {
+	left: 27px;
+    position: absolute;
+	top: 60px;
+}
+
+#inp3 {
+	left: 51px;
+	position: absolute;
+	top: 60px;
+}
+
+#inp4 {
+	left: 77px;
+	position: absolute;
+	top: 60px;
+}
+
+#inp5 {
+	left: 321px;
+	position: absolute;
+	top: -56px;
+}
+
+#inp6 {
+	left: 344px;
+	position: absolute;
+	top: -56px;
+}
+
+#inp7 {
+	left: 368px;
+	position: absolute;
+	top: -56px;
+}
+
+#inp8 {
+	left: 389px;
+	position: absolute;
+	top: -56px;
+}
+
+#inp9 {
+	left: 430px;
+	position: absolute;
+	top: -56px;
+}
+
+#inp10 {
+	left: 495px;
+	position: absolute;
+	top: -56px;
+}
+
+#inp11 {
+	left: 517px;
+	position: absolute;
+	top: -56px;
+}
+
+#inp12 {
+	left: 568px;
+	position: absolute;
+	top: -56px;
+}
+
+#inp13 {
+	left: 592px;
+	position: absolute;
+	top: -56px;
+}
+
+#inp14 {
+	left: 615px;
+	position: absolute;
+	top: -56px;
+}
+
+#inp15 {
+	left: 635px;
+	position: absolute;
+	top: -56px;
+}
+
+
+
+
+/*Water*/
+#inp16 {
+	left: 95px;
+	position: absolute;
+	top: 230px;
+}
+
+#inp17 {
+	left: 120px;
+	position: absolute;
+	top: 230px;
+}
+
+#inp18 {
+	left: 142px;
+	position: absolute;
+	top: 230px;
+}
+
+#inp19 {
+	left: 658px;
+	position: absolute;
+	top: 144px;
+}
+
+#inp20 {
+	left: 682px;
+	position: absolute;
+	top: 144px;
+}
+
+#inp21 {
+	left: 708px;
+	position: absolute;
+	top: 144px;
+}
+
+
+#inp22 {
+	left: 381px;
+	position: absolute;
+	top: 274px;
+}
+
+
+#inp23 {
+	left: 400px;
+	position: absolute;
+	top: 274px;
+}
+
+#inp24{
+	left: 442px;
+	position: absolute;
+	top: 274px;
+}
+
+#inp25 {
+	left: 468px;
+	position: absolute;
+	top: 274px;
+}
+
+#inp26 {
+	left: -75px;
+	position: absolute;
+	top: 374px;
+}
+
+#inp27 {
+	left: -51px;
+	position: absolute;
+	top: 374px;
+}
+
+#inp28 {
+	left: -26px;
+	position: absolute;
+	top: 374px;
+}
+
+#inp29 {
+	left: -2px;
+	position: absolute;
+	top: 374px;
+}
+
+div.crossDiv {
+    left: 133px;
+    position: absolute;
+    top: 248px;
+}
+
+span.crossSpn {
+    color: #333333;
+    font-family: Conv_calibrib;
+    font-size: 175px;
+    position: relative;
+}
+
+.crossText {
+    float: left;
+    font-family: Conv_calibrib;
+    font-size: 23px;
+    left: 483px;
+    position: relative;
+    top: 60px;
+    vertical-align: middle;
+    visibility: hidden;
+    width: 425px;
+}
+
+span.actTitle.crossWord {
+    position:absolute;
+    top:0px;
+    left:20px;
+}
+
+span.actTitle.crosswrdTitle {
+    position:absolute;
+    top:63px;
+    left: 350px;	
+}
+
+.crossDiv, .subtitle {
+	/*
+    -ms-animation-duration: 5s;
+    -webkit-animation-duration:  5s;
+    animation-duration: 5s;*/
+    /*-vendor-animation-delay: 2s;*/
+    /*-vendor-animation-iteration-count: infinite;*/
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  
+}
+
+
+textarea {
+    left: -70px;
+    position: absolute;
+    top: 32px;
+}

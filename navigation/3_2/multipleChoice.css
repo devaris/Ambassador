@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.wrapper {
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.message{
+	position: absolute;
+	top: 120px;
+	right: 0px;
+}
+
+
+
+.TrueFalse {
+    left: -180px;
+    position: absolute;
+    top: 135px;
+}
+
+
+#truefalses {
+    left: 343px;
+    position: absolute;
+    top: 190px;
+    width: 580px;
+
+}
+
+.mymark0 {
+    position: absolute;
+    top: 0px;
+}
+.mymark1 {
+    left: 150px;
+    position: absolute;
+    top: 0px;
+}
+.mymark {
+    position: absolute;
+    top: 0px;
+}
+
+.hideMe{
+    display:none;
+    /*display:block;*/
+}
+
+.showMe{
+    display:block;
+}
+
+.showCorr {
+    color: blue;
+}
+
+.checkCorr {
+    color: green;
+}
+
+.highme {
+    background-color:#CCC;
+}
+
+#readTextarea .under {
+    text-decoration: none;
+    background-color:#CCC;
+}
+
+.checkWron {
+    color: red;
+}
+
+img.imageChoicePos{
+    /*vertical-align:top;*/
+}
+
+
+.sidebarCont2{
+    border:thick;
+    width: 350px;  
+    padding: 0.5em; 
+    margin: 10px 10px 10px 0; 
+    background: #DDD;
+}
+
+
+#imageBackPos{
+    cursor: pointer;
+    left: -150px;
+    position: absolute;
+    top: 260px;
+}
+#imageNextPos{
+    position: absolute;
+    left: 265px;
+    top: 260px;
+    cursor: pointer;
+}
+
+ul { 
+    left: 120px;
+    position: absolute;
+    top: 320px;
+}
+
+ul li { 
+    display: inline-block;
+    margin-right: 10px;
+    cursor:pointer;
+}

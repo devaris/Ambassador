@@ -1,0 +1,124 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=EDGE" />
+    <meta charset="utf-8">
+    <title>Coca Cola Hellenic Ambassador</title>
+
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <link rel="stylesheet" href="css/global.css" type="text/css" media="screen, projection"/>
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!-- <script src="js/jquery-ui.js"></script> -->
+    <script src="js/jquery.cookie.js"></script>
+    
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script> 
+    
+    <!-- 
+    <script src="js/clickmeIntro.js"></script>       
+    <script src="js/menu2.js"></script>
+    -->
+    
+    <script src="js/scorm/SCORM_API_wrapper_Suspend.js"></script>
+    <script src="js/scorm/initScorm.js"></script>
+    
+    <script type='text/javascript' src='js/jquery.jsmovie.1.4.4.js'></script> 
+    
+</head>
+    
+<body style="margin:0">
+
+    <div class="wrapper">
+
+        
+        <iframe style="width: 100%; height: 100%" id="contentFrame" src="about:blank"></iframe>
+        <!-- <iframe src='about:blank'></iframe> -->
+        
+        <!-- BUTTONS -->
+        <div id="prevBut" class="buttons"><img src="images/previous.png"></div>
+        <div id="homeBut" class="buttons"><img src="images/home.png"></div>
+        <div id="nextBut" class="buttons"><img src="images/next.png"></div>
+        
+        <!-- 
+        <div class="introMainAnimation">
+            <div id='animMainMovie'></div>
+        </div> 
+         -->
+          
+    </div><!-- Wrapper end -->
+    
+    <audio autoplay loop>
+        <source src="http://crystalclearserver.com/ftp/cchellenic/AMBASSADOR/app/audio/background.mp3">
+    </audio>
+	
+    
+    <!--
+    /****************************************  
+				MENU ANIMATION GIF 
+	****************************************/
+    ->
+    
+    <style>	
+	/* GIF Animation */
+	.introMainAnimation{
+		position: absolute;
+		top: 0;
+		
+		/*visibility:hidden;*/
+		display:none;
+	}
+	
+	</style>
+    
+	<script>								   
+	
+	
+	$('#animMainMovie').jsMovie({
+		sequence: 'menu#.jpg',
+		from: 1,
+		to: 121,
+		folder : "images/animated/",
+		height:768,
+		width:1024,
+		repeat:false,
+		playOnLoad:false,
+		showPreLoader:true,
+		loader: {path:"images/animated/loading.gif",height:800,width:800,rows:1,columns:1},        
+	});
+	
+	function showMainAnimationGif(){
+		// PLAY GIF ANIMATION
+		$(".introMainAnimation").css('display','block');
+		$("#animMainMovie").jsMovie("play",1,121,false,false);
+	}
+	
+	// SHOW + PLAY Animation Menu Animation GIF
+	$('#animMainMovie').on('loaded',function(){
+		/* SHOW GIf
+		$(".introMainAnimation").css('visibility','visible');
+		$("#animMainMovie").jsMovie("play",1,121,false,false);
+		*/
+	});
+	$('#animMainMovie').on('ended',function(){ 												
+		$("#animMainMovie").jsMovie("stop");
+		$(".introMainAnimation").css('display','none');
+		
+		/* KILL ANIMATION OBJECT
+		var myTimeOut2 = setTimeout(function(){ 
+			$("#animMainMovie").jsMovie("destroy");	
+			clearTimeout(myTimeOut2);
+		}, 500);
+		*/
+		
+	});			
+	</script>
+     -->
+    
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<TITLE>Ambassador Intro</TITLE>
+    
+    <!-- GLOBAL CSS -->
+	<link rel="stylesheet" href="../../css/globalExercise.css" type="text/css" media="screen, projection"/>
+    
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="css/exerciseCss.css" type="text/css" media="screen, projection"/>
+    
+	<!-- GLOBAL JS -->
+    <script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+
+    <!-- LOCAL JS -->
+    
+    <script>
+		// COMPLETED MAIN ACTIVITY 
+		window.parent.activateFor();
+	</script>
+    
+    <script>
+		$(document).ready(function(){
+								   
+			// PLAY MAIN AUDIO
+			window.parent.mainAudioPlay();
+			
+			// LOCAL NAVIGATION BUTTONS
+			
+			// Local NEXT Function
+			function newMainNextAssign(){			
+				
+				window.parent.loadPage(1,8);
+				
+				// Remove Next' New Assign
+				$("#nextButEx").unbind("click", newMainNextAssign);
+			}			
+			$("#nextButEx").on("click", newMainNextAssign);
+			
+			// Local PREVIOUS Function
+			function newMainPreviousAssign(){
+				//window.parent.consoleMsg("!!!!! newMainPreviousAssign !!!!!!!!!");
+				
+				window.parent.loadPage(1,0);
+				
+				// Remove Previous' New Assign
+				$("#prevButEx").unbind("click", newMainPreviousAssign);
+			}			
+			$("#prevButEx").on("click", newMainPreviousAssign);	
+			
+			
+		}); //Document Ready End	
+			
+	</script>	
+
+    </head>
+    
+    <body style="margin:0">
+    
+        <div class="wrapper">
+        
+        	<div class="container">
+				<div class="zoomImg">
+                	<img src="images/imgAll.jpg">
+                    <span id="zoom1"> </span>
+                    <span id="zoom2"> </span>
+                    <span id="zoom3"> </span>
+                    <span id="zoom4"> </span>
+                    <span id="zoom5"> </span>
+                    <span id="zoom6"> </span>
+                </div>
+        	</div>
+            
+            <!-- <div id="prevButEx"><img src="../../images/previous.png"></div> -->
+            <div id="nextButEx"><img src="../../images/next.png"></div>
+                          
+        </div>
+    
+    <!-- ZOOM FUNCTION -->
+    <script src="js/zoom.js"></script>
+    
+	<script>
+	// ZOOM BUTTONS
+	document.querySelector('#zoom1').addEventListener( 'click', function( event ) {
+		event.preventDefault();
+		
+		zoom.to({ 
+			element: event.target, 
+			// Function to call once zooming completes
+			callback: function() {  
+				window.parent.loadPage(1,2);
+				//zoom.out();
+			}
+		});
+		
+	} );
+	
+	document.querySelector('#zoom2').addEventListener( 'click', function( event ) {
+		event.preventDefault();
+		
+		zoom.to({ 
+			element: event.target, 
+			// Function to call once zooming completes
+			callback: function() {  
+				window.parent.loadPage(1,3);
+			}
+		});
+		
+	} );
+	
+	document.querySelector('#zoom3').addEventListener( 'click', function( event ) {
+		event.preventDefault();
+		
+		zoom.to({ 
+			element: event.target, 
+			// Function to call once zooming completes
+			callback: function() {  
+				window.parent.loadPage(1,4);
+			}
+		});
+		
+	} );
+	
+	document.querySelector('#zoom4').addEventListener( 'click', function( event ) {
+		event.preventDefault();
+	   
+		zoom.to({ 
+			element: event.target, 
+			// Function to call once zooming completes
+			callback: function() { 
+				window.parent.loadPage(1,5);
+			}
+		});
+		
+	} );
+	
+	document.querySelector('#zoom5').addEventListener( 'click', function( event ) {
+		event.preventDefault();
+	   
+		zoom.to({ 
+			element: event.target, 
+			// Function to call once zooming completes
+			callback: function() { 
+				window.parent.loadPage(1,6);
+			}
+		});
+		
+	} );
+	
+	document.querySelector('#zoom6').addEventListener( 'click', function( event ) {
+		event.preventDefault();
+	   
+		zoom.to({ 
+			element: event.target, 
+			// Function to call once zooming completes
+			callback: function() { 
+				window.parent.loadPage(1,7);
+			}
+		});
+		
+	} );
+			
+	</script>
+    
+</body>
+
+</html>

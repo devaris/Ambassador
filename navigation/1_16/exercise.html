@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+	<meta charset="utf-8">
+	<TITLE>Ambassador Intro</TITLE>
+    
+    <!-- GLOBAL CSS -->
+    <!-- <link rel="stylesheet" href="../../css/animate.css"> -->
+	<link rel="stylesheet" href="../../css/globalExercise.css" type="text/css" media="screen, projection"/>
+    
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="css/exerciseCss.css" type="text/css" media="screen, projection"/>
+    
+	<!-- GLOBAL JS -->
+	<script type="text/javascript" src="../../js/jquery-1.11.0.min.js"></script>
+
+    <!-- LOCAL JS -->
+    
+    <script>
+		// COMPLETED MAIN ACTIVITY 
+		window.parent.activateFor();
+	</script>	
+	
+	<script>
+		$(document).ready(function(){
+			// LOCAL NAVIGATION BUTTONS
+
+			// Local PREVIOUS Function
+			function newMainPreviousAssign(){
+				//window.parent.consoleMsg("!!!!! newMainPreviousAssign !!!!!!!!!");
+				
+				window.parent.loadPage(1,12);
+				
+				// Remove Previous' New Assign
+				$("#prevButEx").unbind("click", newMainPreviousAssign);
+			}			
+			$("#prevButEx").on("click", newMainPreviousAssign);	
+			
+			
+		}); //Document Ready End	
+			
+	</script>
+  
+    </head>
+    
+    <body style="margin:0">
+    
+        <div class="wrapper">
+		
+			<div id="prevButEx"><img src="../../images/previous.png"></div>
+                          
+        </div>
+    
+    </body>
+
+</html>

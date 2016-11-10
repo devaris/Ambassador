@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+div.wrapper {
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+#drop1{
+	left: 90px;
+    position: absolute;
+    top: 180px;
+}
+
+#drop2{
+	left: 90px;
+    position: absolute;
+    top: 312px;
+}
+
+#drop3{
+	left: 90px;
+    position: absolute;
+    top: 452px;
+}
+
+#drop4{
+	left: 90px;
+    position: absolute;
+    top: 582px;
+}
+
+
+div.drags {
+	left: 897px;
+    position: absolute;
+    top: 324px;
+}
+
+div.drags > span {
+    display: block;
+}
+
+
+ ul.unfilled > li {
+	cursor: pointer;
+    display: block;
+    margin-bottom: 20px;
+ }
+ 
+ ul.unfilled {
+    left: -160px;
+    position: relative;
+    top: -510px;
+ }
+ 
+.invisible{
+	opacity: 0;
+}
+
+.larges {
+	left: 42px;
+    list-style: outside none none;
+    position: absolute;
+    top: 205px;
+}
+ 
+#large1{
+	left: 49px;
+    position: absolute;
+    top: -41px;
+}
+
+
+#large2{
+	left: 49px;
+    position: absolute;
+    top: 91px;
+}
+
+#large3{
+	left: 49px;
+    position: absolute;
+    top: 231px;
+}
+
+#large4{
+	left: 49px;
+    position: absolute;
+    top: 361px;
+}
+/*
+.tick{
+	position: absolute;
+	visibility: hidden;
+}*/
+
+#correct1{
+	visibility: hidden;
+	left: 560px;
+    position: absolute;
+    top: 130px;
+}
+
+
+#correct2{
+	visibility: hidden;
+	left: 560px;
+    position: absolute;
+    top: 290px;
+}
+
+#correct3{
+	visibility: hidden;
+	left: 560px;
+    position: absolute;
+    top: 430px;
+}
+
+#correct4{
+	visibility: hidden;
+	left: 560px;
+    position: absolute;
+    top: 580px;
+}
+
+#wrong1{
+	visibility: hidden;
+	left: 300px;
+    position: absolute;
+    top: 130px;
+}
+
+
+#wrong2{
+	visibility: hidden;
+	left: 300px;
+    position: absolute;
+    top: 270px;
+}
+
+#wrong3{
+	visibility: hidden;
+	left: 300px;
+    position: absolute;
+    top: 410px;
+}
+
+#wrong4{
+	visibility: hidden;
+	left: 300px;
+    position: absolute;
+    top: 560px;
+}

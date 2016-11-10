@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+.introLogos {
+    line-height: 768px;
+    text-align: center;
+}
+
+.introLogos img{
+	top: -200px;
+	
+	position: relative;
+	
+	/* OPACITY */
+    opacity: 0;
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	/* IE 5-7*/ 
+	filter: alpha(opacity=0);
+}

@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.wrapper {
+    background-image: url("../images/back.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+	
+	/*
+	-moz-animation-delay:0s;
+  	-webkit-animation-delay:0s;
+	animation-delay:0s;
+	
+	animation-duration: 3s;
+	*/
+}
+
+/* LOCAL NAVIGATION BUTTONS */
+#prevButEx, #nextButEx {
+	position:absolute;
+	cursor:pointer;
+}
+#prevButEx {
+    bottom: 5px;
+    left: 5px;
+}
+#nextButEx {
+    bottom: 5px;
+    left: 80px;
+}
+
+/* ZOOM ELEMENTS */
+.container {
+    position: relative;
+    top: 311px;
+}
+.zoomImg span{
+    display: inline-block;
+	position: absolute;
+	cursor:pointer;
+	
+	/*border: 2px solid black;*/
+}
+#zoom1 {
+    height: 175px;
+    left: 0;
+    top: 5px;
+    width: 150px;
+}
+#zoom2 {
+    height: 175px;
+    left: 150px;
+    top: 5px;
+    width: 100px;
+}
+#zoom3 {
+    height: 175px;
+    left: 250px;
+    top: 5px;
+    width: 145px;
+}
+#zoom4 {
+    height: 175px;
+    left: 400px;
+    top: 5px;
+    width: 235px;
+}
+#zoom5 {
+    height: 175px;
+    right: 120px;
+    top: 5px;
+    width: 260px;
+}
+#zoom6 {
+    height: 175px;
+    right: 0;
+    top: 5px;
+    width: 115px;
+}

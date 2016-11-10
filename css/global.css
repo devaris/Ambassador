@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+	overflow: hidden;
+    background-color:grey;
+}
+
+div.wrapper {
+    width:1024px;
+    height:768px;
+    margin:auto;
+	
+	position: relative;
+	
+	/*
+	background-image: url("../images/exBackground.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+	
+	overflow:hidden;
+	*/   
+}
+
+iframe{
+	border: 0 none;
+	/*display:none;*/
+}
+
+/* BUTTONS */
+.buttons{
+	position:absolute;
+	bottom:-15px;
+	cursor:pointer;
+}
+#prevBut {
+    bottom: 5px;
+    left: 5px;
+}
+#homeBut {
+    bottom: 6px;
+    left: 41px;
+}
+#nextBut {
+    bottom: 5px;
+    left: 80px;
+}

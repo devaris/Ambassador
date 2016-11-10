@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.wrapper {
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.infoBox{
+	left: 10px;
+    position: absolute;
+    top: 70px;
+}

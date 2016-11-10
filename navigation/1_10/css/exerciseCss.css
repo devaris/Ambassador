@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.wrapper {
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.TopHeader{
+	position: absolute;
+    top: -5px;
+}
+
+
+.stickers{
+	position: absolute;
+	top: 160px;
+	left: 5px;
+}
+
+.logo{
+	position: absolute;
+	top: 595px;
+	left: 705px;
+}
